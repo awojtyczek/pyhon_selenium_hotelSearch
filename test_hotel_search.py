@@ -3,9 +3,6 @@ from selenium import webdriver
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
 
-from anetka1.kurs_python.page_object_hotel.search_hotel import SearchHotelPage
-from anetka1.kurs_python.page_object_hotel.search_result import SearchResultsPage
-
 
 @pytest.fixture()
 def test_setup():
