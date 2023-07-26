@@ -8,6 +8,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 def test_setup():
     global driver
     driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+    driver.implicitly_wait(10)
     driver.get("http://www.kurs-selenium.pl/demo/")
     driver.maximize_window()
     yield
